@@ -12,6 +12,18 @@
 - rotate(x) #wgere sprite turns by x radians
 - move_local_x(x) # move sprite to its left and right
 - move_local_y(y) # move sprite up and down
+- lerp()
+  -short for linear interpolate, calculates and returns a weighted average between to values
+
+  - 3 arguments (2 values to average and a value between 0.0 and 1.0 to skew the result.)
+  - used to animate things moving towards a target with a single line of code
+
+  ```
+      func _process(delta):
+          position = lerp(position, get_local_mouse_position(), 2*delta)
+  ```
+
+- array.append() and array.pop_front()
 
 #### Functions
 
