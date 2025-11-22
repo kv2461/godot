@@ -58,6 +58,12 @@
     - We can use it to ensure that the changes between frames don't make the game's behavior unreliable
     - This is because different computers run differently, so a fast computer will have more FPS than a slow computer.
     - If we ignore delta, the game experience will vary, depending on the computer. Delta helps with consistency
+    - To apply delta, you need to multiply your speed values by it
+    ```
+        func _process(delta):
+            rotate(3.0 * delta)
+    ```
+    - When multiplying delta, you make motion time-dependent rather than frame-dependent
 
 ### Tips
 
