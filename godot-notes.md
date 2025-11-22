@@ -127,8 +127,8 @@
         - range(3) # output: [0,1,2]
         - range(5) # output: [0,1,2,3,4,5]
 
+#### Arrays
 
-    -Arrays
         ```
             func run():
                 for number in range(3):
@@ -155,6 +155,20 @@
                 element = array[2]
                 print(element)
         ```
+
+        ```
+            var units = []
+            var selected_units = []
+
+            func select_units(cells):
+                for cell in cells:
+                    if cell in units:
+                        selected_units.append(cell)
+                update()
+        ```
+
+        - In a condition, the in key word allows you to check if a value exists in an array
+        - Array's append() function appends a new value at the end of the array
 
 #### The Game Loop
 
