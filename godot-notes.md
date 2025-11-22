@@ -23,7 +23,8 @@
           position = lerp(position, get_local_mouse_position(), 2*delta)
   ```
 
-- array.append() and array.pop_front()
+- array.append() and array.pop_front() / array.pop_back()
+- array.size() for length
 
 #### Functions
 
@@ -181,6 +182,9 @@
 
         - In a condition, the in key word allows you to check if a value exists in an array
         - Array's append() function appends a new value at the end of the array
+
+        - inventory[-1] uses the last item in the array
+        - inventory[-2] uses the second to last item in the array
 
 #### The Game Loop
 
