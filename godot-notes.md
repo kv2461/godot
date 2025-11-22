@@ -13,12 +13,22 @@
 - move_local_x(x) # move sprite to its left and right
 - move_local_y(y) # move sprite up and down
 
-#### Defining a function
+#### Functions
 
     ```
         func name():
             instruction_1
             instruction_2
+    ```
+
+    ```
+        func function_name(parameter_name1, parameter_name2):
+    ```
+
+#### Variables
+
+    ```
+        var health = 100
     ```
 
 ### Tips
