@@ -1,6 +1,8 @@
-# Getting started
+# Getting started with DOCS
 
-### Docs
+### GDScript
+- Installed godot-tools
+- [https://gdquest.github.io/learn-gdscript/?ref=godot-docs](GDScript tutorial)
 
 ### Tips
 
