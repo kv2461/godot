@@ -26,6 +26,11 @@
 - array.append() and array.pop_front() / array.pop_back()
 - array.size() for length
 - dictionary.keys() to get a list of its keys
+- str() # Converts to String
+- int() # Converts to int (whole numbers)
+- float() # Converts to float (decimals)
+- 3 / 2 # output = 1 because division of two whole numbers should always result in a whole number
+- 3.0 / 2.0 # output = 1.5
 
 #### Functions
 
@@ -215,6 +220,23 @@
     func add_item(item_name, amount):
         inventory[item_name]+= amount
 ```
+
+#### Type Hints
+
+- Specify the type a variable can accept
+
+```
+    var cell_size: Vector2 = Vector2(50.0, 50.0)
+```
+
+- Type inference - in many cases, but not all, the computer can figure out the type of a variable for you.
+
+```
+    var cell_size := Vector2(50.0, 50.0)
+```
+
+- Will prevent major type errors
+- improve readability
 
 #### The Game Loop
 
