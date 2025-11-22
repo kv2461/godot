@@ -5,13 +5,21 @@
 - Installed godot-tools
 - [https://gdquest.github.io/learn-gdscript/?ref=godot-docs](GDScript tutorial)
 
-### Functions covered in Tutorial
+#### Functions covered in Tutorial
 
 - print()
 - show and hide()
 - rotate(x) #wgere sprite turns by x radians
 - move_local_x(x) # move sprite to its left and right
 - move_local_y(y) # move sprite up and down
+
+#### Defining a function
+
+    ```
+        func name():
+            instruction_1
+            instruction_2
+    ```
 
 ### Tips
 
