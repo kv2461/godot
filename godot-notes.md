@@ -52,6 +52,12 @@
   - Godot will automatically run this function every frame
   - When Godot draws on the screen we call that a frame
   - Similar to Pico8's \_\_update()
+  - The process function's delta parameter
+    - Delta represents a time difference
+    - It is the time passed since the previous frame, in seconds.
+    - We can use it to ensure that the changes between frames don't make the game's behavior unreliable
+    - This is because different computers run differently, so a fast computer will have more FPS than a slow computer.
+    - If we ignore delta, the game experience will vary, depending on the computer. Delta helps with consistency
 
 ### Tips
 
