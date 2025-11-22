@@ -51,6 +51,7 @@
   - Process function gets its name because it does calculations or calcualte actions
   - Godot will automatically run this function every frame
   - When Godot draws on the screen we call that a frame
+  - Similar to Pico8's \_\_update()
 
 ### Tips
 
