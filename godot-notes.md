@@ -107,6 +107,55 @@
                 cell.x += 1
     ```
 
+    - Can be dangerous if the while condition never becomes false, resulting in the function running infinitely
+
+#### For Loops
+
+    ```
+        for number in range(3):
+            cell += Vector2(1,1)
+    ```
+
+    ```
+        func move_to_end():
+            for number in range(board_size.x - 1):
+                cell.x += 1
+    ```
+
+    -helper function range()
+        - range(n) creates a list of numbers from 0 to n - 1.
+        - range(3) # output: [0,1,2]
+        - range(5) # output: [0,1,2,3,4,5]
+
+
+    -Arrays
+        ```
+            func run():
+                for number in range(3):
+                    print(number)
+        ```
+
+        ```
+            func run():
+                for element in [0,1,2]:
+                    print(element)
+        ```
+
+        ```
+            func run():
+                var array = [0,1,2]
+                var element
+
+                element = array[0]
+                print(element)
+
+                element = array[1]
+                print(element)
+
+                element = array[2]
+                print(element)
+        ```
+
 #### The Game Loop
 
 - Godot has special functions we can customize or add to
