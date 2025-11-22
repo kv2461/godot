@@ -47,6 +47,17 @@
                 health = 100
     ```
 
+    ```
+        if health > 100: # If health is greater than 100
+            pass
+        if health < 50: # If health is less than 50
+            pass
+        if health == 25: # If health is equal to 25
+            pass
+        if health != 7: # If health is not equal to 7
+            pass
+    ```
+
 #### The Game Loop
 
 - Godot has special functions we can customize or add to
