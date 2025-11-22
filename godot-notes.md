@@ -25,6 +25,7 @@
 
 - array.append() and array.pop_front() / array.pop_back()
 - array.size() for length
+- dictionary.keys() to get a list of its keys
 
 #### Functions
 
@@ -185,6 +186,35 @@
 
         - inventory[-1] uses the last item in the array
         - inventory[-2] uses the second to last item in the array
+
+#### Dictionaries
+
+- Dictionary is a data structure that allows you to map pairs of keys and values.
+
+```
+    var dictionary = {
+        key1: value_1,
+        key2: value_2,
+    }
+```
+
+- Dictionaries can hold any values
+- Key could be string, number, or even vector
+
+```
+    var inventory - {
+        "healing heart" : 3,
+        "gems" : 5,
+        "sword": 1,
+    }
+
+    var sword_count = inventory["sword"]
+```
+
+```
+    func add_item(item_name, amount):
+        inventory[item_name]+= amount
+```
 
 #### The Game Loop
 
