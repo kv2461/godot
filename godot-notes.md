@@ -92,6 +92,21 @@
     -Essential in video games
     -Allows you to represent a character's movement speed and direction, calculate the distance to a target, and more. with a little code.
 
+#### While Loops
+
+    ```
+        var number = 0
+        while number < 4:
+            print(number)
+            number += 1
+    ```
+
+    ```
+        func move_to_end():
+            while cell.x < board_size.x - 1:
+                cell.x += 1
+    ```
+
 #### The Game Loop
 
 - Godot has special functions we can customize or add to
