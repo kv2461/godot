@@ -58,6 +58,40 @@
             pass
     ```
 
+    ```
+        func run():
+            var speed = 120
+            if speed < 100:
+                print("You're slow!")
+            else:
+                print("You're fast!")
+    ```
+
+#### Vectors
+
+    - Context: increasing in size as we level up
+    ```
+    func level_up():
+        scale.x += 0.2
+        scale.y += 0.2
+
+    ```
+    ```
+    func level up():
+        scale += Vector2(0.2, 0.2)
+    ```
+        -the scale variable has two sub-variables to it: x and y
+        -scale is a Vector2, which stands for two-dimensional vector.
+    - A Vector2 represents 2D coordinates.
+    - A vector, in physics, is a quantity with a magnitude and direction.
+        -For example, a force applied to some object, the velocity(speed and direction) of a character, and so on.
+    - Often represented with an arrow
+    -In Godot, 2D vectors are a common value type named Vector2
+    -Unlike plain numbers, they store two decimbal numbers: one for the X coordinate and one for the Y coordinate.
+    -Position and scale can be Vector2
+    -Essential in video games
+    -Allows you to represent a character's movement speed and direction, calculate the distance to a target, and more. with a little code.
+
 #### The Game Loop
 
 - Godot has special functions we can customize or add to
