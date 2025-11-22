@@ -38,6 +38,15 @@
             position.y = 250
     ```
 
+#### Conditions
+
+    ```
+        func heal(amount):
+            health += amount
+            if health > 100:
+                health = 100
+    ```
+
 #### The Game Loop
 
 - Godot has special functions we can customize or add to
