@@ -12,3 +12,11 @@
     - Mob
     - HUD
 - which we will then combine into the game's Main scene
+
+### Player
+- Made player by selecting Other Node > Area2D
+- Renamed player through double clicking
+- Warning is ok to ignore because we're starting with sprites 
+- Before we add any children to the Player node, we want to make sure we don't accidentally move or resize them by clicking on them. 
+    - know it is applied when the tool used (icon is diagonal 8) is next to the warning symbol on the left menu
+- Save scene as player.tcsn.
