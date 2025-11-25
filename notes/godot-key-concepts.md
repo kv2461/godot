@@ -44,5 +44,12 @@ You can wire these nodes so they can communicate using signals
       - Coins
       - Enemies
 
-
 ### Signals
+
+- Nodes emit signals when some event occurs. This feature allows you to make nodes communicate without hardwiring them in code.
+- Gives a lot of flexibility in how you structure your scenes.
+  - Godot's version of the observer pattern.
+
+### Summary
+
+**Nodes** are your game's smallest building blocks. You combine them to create **scenes** that you then combine and nest into the **scene tree**. You can then use **signals** to make nodes react to events in other nodes or different scene tree branches.
