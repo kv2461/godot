@@ -70,3 +70,12 @@
 ---
 
 - ran into issues and realized for F6 when runnign current scenes Input needs to be selected at the top to Allow Game input
+
+---
+
+##### Understanding the Code so far
+
+- So far I like the built in IDE for Godot - its helpful with the docs built in and having the inputs be recognized as things i can use
+- `position` is a built-in property that comes from the Node2D class which Area2D inherits from.
+  - position is a Vector2 that represents the node's local coordinates relative to its parent
+  - position += velocity \* delta directly modifies where the node is in 2d space.
