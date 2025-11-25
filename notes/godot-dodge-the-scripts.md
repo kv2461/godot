@@ -48,3 +48,10 @@
 - player.gd starts with _ready() and _process() 
 - _ready() is called when a node enters the scene tree
 _process() is called every frame 
+----
+- Adding input 
+    - Project -> Project Sttings -> Input Map tab
+- search move_right and add
+- Add event to assign a key to this action
+
+![Alt text](https://docs.godotengine.org/en/stable/_images/input-mapping-completed.webp)
