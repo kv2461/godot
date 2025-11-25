@@ -20,3 +20,22 @@
 - Before we add any children to the Player node, we want to make sure we don't accidentally move or resize them by clicking on them. 
     - know it is applied when the tool used (icon is diagonal 8) is next to the warning symbol on the left menu
 - Save scene as player.tcsn.
+
+#### Player Animation
+
+- Click on player A and add (control A) a child node AnimatedSprite2D.
+    - Will handle the appearance and animations for our player.
+    - Wil have a warning because it requires SpriteFrames
+    -SpriteFrames is a list of the animatiosn it can display.
+- To add sprite frames, use inspector and locate sprite frames. Should click empty -> New Sprite Frames
+- Click on newly created sprite frames and a window should appear on the bottom
+- Rename default to walk
+- Cntrl n for create a new animation -> name it to up
+- Cntrl o to add frames to file
+- Change the scale to 0.5,0.5 in the inspector of AnimatedSprite2D's Node2D
+
+#### Collision shape
+- Add a CollisionShape2D as a child of Player
+    - will determine the player's hitbox 
+    - For this specific sprite, we are goign to use CapsuleShape2D
+    - hitbox was nice to play around with in the workspace
