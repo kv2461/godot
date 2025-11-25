@@ -39,3 +39,12 @@
     - will determine the player's hitbox 
     - For this specific sprite, we are goign to use CapsuleShape2D
     - hitbox was nice to play around with in the workspace
+
+#### Coding the Player
+- Click on player in the left menu and click on attach the script
+- Use @export like 
+    ```export var speed = 400``` to allow us to set its value in the inspector 
+    - handy for values you want to be able to adjust like a node's built in properties.
+- player.gd starts with _ready() and _process() 
+- _ready() is called when a node enters the scene tree
+_process() is called every frame 
