@@ -67,4 +67,6 @@
   `$AnimatedSprite2D.play()` is the same as `get_node("AnimatedSprite2D").play()`
 - In GDScript, $ returns the node at the relative path from the current path from the current node, or returns null if the node is not found. Since AnimatedSprite2D is a child of the current node, we can use $AnimatedSprite2D.
 
+---
 
+- ran into issues and realized for F6 when runnign current scenes Input needs to be selected at the top to Allow Game input
