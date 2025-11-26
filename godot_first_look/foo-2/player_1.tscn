@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://1tdb2vwc0vcg"]
+
+[ext_resource type="Script" uid="uid://4fqmdr1h0pdw" path="res://player_1.gd" id="1_6736r"]
+[ext_resource type="Texture2D" uid="uid://xjslgffn1yq0" path="res://assets/art/playerGrey_walk1.png" id="2_i66ns"]
+[ext_resource type="Texture2D" uid="uid://b5p8ic5wqnxx1" path="res://assets/art/playerGrey_walk2.png" id="3_lq3ur"]
+[ext_resource type="Texture2D" uid="uid://gaor5wju1khd" path="res://assets/art/playerGrey_up1.png" id="4_txlgs"]
+[ext_resource type="Texture2D" uid="uid://dibe068p1fvm8" path="res://assets/art/playerGrey_up2.png" id="5_dkxmd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cy177"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_i66ns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lq3ur")
+}],
+"loop": true,
+"name": &"walk_horizontal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_txlgs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_dkxmd")
+}],
+"loop": true,
+"name": &"walk_vertical",
+"speed": 5.0
+}]
+
+[node name="Player1" type="Area2D"]
+script = ExtResource("1_6736r")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_cy177")
+animation = &"walk_vertical"
