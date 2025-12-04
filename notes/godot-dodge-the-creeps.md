@@ -73,6 +73,17 @@
 
 ---
 
+- hide() to hide the player when the game starts
+
+---
+
+- Add signal called hit
+  - Player will emit hit when it collides with an enemy
+  - Right side menu for node it should be show up under Node
+- Using the Godot UI, right click on body_entered(body:Node2D)
+  - right click to connect and connect a signal to the player
+  - know it works if you see a new function _on_body_entered in the player script
+
 ##### Understanding the Code so far
 
 - So far I like the built in IDE for Godot - its helpful with the docs built in and having the inputs be recognized as things i can use

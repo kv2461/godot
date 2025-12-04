@@ -35,3 +35,7 @@ func _process(delta):
 		
 	position += velocity * delta
 	position = position.clamp(Vector2.ZERO, screen_size)
+
+
+func _on_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
