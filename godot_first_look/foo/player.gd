@@ -38,4 +38,9 @@ func _process(delta):
 
 
 func _on_body_entered(body: Node2D) -> void:
-	pass # Replace with function body.
+	hide()
+	hit.emit()
+	$CollisionShape2D.set_deferred("disabled", true)
+	#Disabling the area's collision shape can cause an error if it happens in the middle
+	# of the engine's collision processing. Using set_deferred() tells Godot to wait to 
+	#disable the shape until it's safe to do so.
