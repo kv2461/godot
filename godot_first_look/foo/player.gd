@@ -4,6 +4,7 @@ extends Area2D
 var screen_size
 
 func _ready():
+	hide()
 	screen_size = get_viewport_rect().size
 
 func _process(delta):
