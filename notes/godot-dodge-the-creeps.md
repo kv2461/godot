@@ -82,8 +82,8 @@
   - Right side menu for node it should be show up under Node
 - Using the Godot UI, right click on body_entered(body:Node2D)
   - right click to connect and connect a signal to the player
-  - know it works if you see a new function _on_body_entered in the player script
-  - hit.emit() gets called in that function - not entirely sure but makes sense 
+  - know it works if you see a new function \_on_body_entered in the player script
+  - hit.emit() gets called in that function - not entirely sure but makes sense
     - because emit is a signal that the player hits, the signal function i added called "body_entered" probably happens if another body collides with the player's body
     - Emitted when the received body enters this area. body can be a PhysicsBody2D or a TileMap. TileMaps are detected if their TileSet has collision shapes configured. Requires monitoring to be set to true.
     - so it is a built in signal for the specific class Area2D
@@ -94,3 +94,5 @@
 - `position` is a built-in property that comes from the Node2D class which Area2D inherits from.
   - position is a Vector2 that represents the node's local coordinates relative to its parent
   - position += velocity \* delta directly modifies where the node is in 2d space.
+- Observation - there is a \_ready() and \_process() function when I created player.gd
+  - Equivalent to pico 8 seems like \_ready() ~= \_init() and \_process() seems to have both **udpate() and **draw()
