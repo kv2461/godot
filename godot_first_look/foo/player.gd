@@ -44,3 +44,8 @@ func _on_body_entered(body: Node2D) -> void:
 	#Disabling the area's collision shape can cause an error if it happens in the middle
 	# of the engine's collision processing. Using set_deferred() tells Godot to wait to 
 	#disable the shape until it's safe to do so.
+	
+func start(pos):
+	position = pos
+	show()
+	$CollisionShape2D.disabled = false
