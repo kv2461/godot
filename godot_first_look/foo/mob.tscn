@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dek0svra1g16i"]
 
 [node name="Mob" type="RigidBody2D"]
+gravity_scale = 0.0
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
