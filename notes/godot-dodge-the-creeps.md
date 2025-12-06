@@ -100,6 +100,8 @@
     - Mask "I collide with things on layers X, Y, Z
     - If a mob is on Layer 1 and has Mask 1 checked, it collides with other things on Layer 1(including other mobs)
     - By unchecking Mask 1, we're saying "don't collide with anything on Layer 1" so mobs ignore each other
+- Connect screen_exited() signal from VisibleOnScreenNotifier2D to Mob to add code func \_on_bisible_on_screen_notifier_2d_screen_exited()
+  - queue_free() functio is called so that it deletes the node at the end of the frame when they leave the screen
 
 ##### Understanding the Code so far
 
