@@ -88,6 +88,12 @@
     - Emitted when the received body enters this area. body can be a PhysicsBody2D or a TileMap. TileMaps are detected if their TileSet has collision shapes configured. Requires monitoring to be set to true.
     - so it is a built in signal for the specific class Area2D
 
+#### Adding Mob
+
+- Mobs will spawn randomly at the edges of the screen, choose a random dirction, and move in a straight line.
+- Create a Mob scene, which we can then instance to create to create anu number of independent mobs in the game.
+- Made a rigidBody2D scene for mobs with children nodes AnimatedSprite2D, CollisionShape2D, and VisibleOnScreenNotifier2D
+
 ##### Understanding the Code so far
 
 - So far I like the built in IDE for Godot - its helpful with the docs built in and having the inputs be recognized as things i can use
@@ -96,3 +102,23 @@
   - position += velocity \* delta directly modifies where the node is in 2d space.
 - Observation - there is a \_ready() and \_process() function when I created player.gd
   - Equivalent to pico 8 seems like \_ready() ~= \_init() and \_process() seems to have both **udpate() and **draw()
+- Difference between Player scene's parent node being Area2D and Mob scene's parent node being RigidBody2D
+  - This is different from Area2D player scene
+  - According to Claude, the parent node type determines the physics behavior
+    - Area2D
+      - Detects overlaps/collisions but doesn't interact physically
+      - Doesn't move from physics (you can control it manually with position +=)
+      - Perfect for player-controlled characters
+      - Can detect when mobs enter/exit its area with signals like body_entered
+    - RigidBody2D (Mob)
+      - Has actual physics simulation (gravity, momentum, bouncing)
+      - Moves automati
+      - can collide with other physics bodies and bounce off
+      - perfect for enemies that move independently with physics
+    - Tutorial uses this because
+      - Player needs precise, direct control (you set position directly)
+      - Mobs need to bounce around naturally with physics simulation
+      - When a mob hits the player, the Area2D detects it without the player getting pushes around
+  - The parent determines how these collisions behave
+    - Area2D: "Tell me when something touches me" (sensor)
+    - RigidBody2D: "Physically react when something hits me" (physics object)
