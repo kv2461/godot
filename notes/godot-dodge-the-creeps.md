@@ -122,3 +122,4 @@
   - The parent determines how these collisions behave
     - Area2D: "Tell me when something touches me" (sensor)
     - RigidBody2D: "Physically react when something hits me" (physics object)
+- I've grouped parent nodes and its children node everytime so far (just twice but still)
