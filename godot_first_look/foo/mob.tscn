@@ -49,8 +49,10 @@ gravity_scale = 0.0
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_pcqmr")
 animation = &"fly"
+frame_progress = 0.49892023
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
