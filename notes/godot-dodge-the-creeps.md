@@ -94,7 +94,7 @@
 - Create a Mob scene, which we can then instance to create to create anu number of independent mobs in the game.
 - Made a rigidBody2D scene for mobs with children nodes AnimatedSprite2D, CollisionShape2D, and VisibleOnScreenNotifier2D
 - Set its RigidBody2D's gravity scale to 0 to prevent the mob from falling downwards
-
+- Unchecked its CollisionObject2D's Mask-1 so that mobs do not collide with each other
 ##### Understanding the Code so far
 
 - So far I like the built in IDE for Godot - its helpful with the docs built in and having the inputs be recognized as things i can use
