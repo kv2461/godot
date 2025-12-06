@@ -95,6 +95,12 @@
 - Made a rigidBody2D scene for mobs with children nodes AnimatedSprite2D, CollisionShape2D, and VisibleOnScreenNotifier2D
 - Set its RigidBody2D's gravity scale to 0 to prevent the mob from falling downwards
 - Unchecked its CollisionObject2D's Mask-1 so that mobs do not collide with each other
+  - Layers and masks work together
+    - Layer "I am on layer X"
+    - Mask "I collide with things on layers X, Y, Z
+    - If a mob is on Layer 1 and has Mask 1 checked, it collides with other things on Layer 1(including other mobs)
+    - By unchecking Mask 1, we're saying "don't collide with anything on Layer 1" so mobs ignore each other
+
 ##### Understanding the Code so far
 
 - So far I like the built in IDE for Godot - its helpful with the docs built in and having the inputs be recognized as things i can use
