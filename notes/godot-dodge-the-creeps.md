@@ -93,6 +93,7 @@
 - Mobs will spawn randomly at the edges of the screen, choose a random dirction, and move in a straight line.
 - Create a Mob scene, which we can then instance to create to create anu number of independent mobs in the game.
 - Made a rigidBody2D scene for mobs with children nodes AnimatedSprite2D, CollisionShape2D, and VisibleOnScreenNotifier2D
+- Set its RigidBody2D's gravity scale to 0 to prevent the mob from falling downwards
 
 ##### Understanding the Code so far
 
