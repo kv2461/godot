@@ -23,7 +23,7 @@ func new_game():
 
 
 func _on_mob_timer_timeout() -> void:
-	pass # Replace with function body.
+	var mob = mob_scene.instantiate()
 
 
 func _on_score_timer_timeout() -> void:
