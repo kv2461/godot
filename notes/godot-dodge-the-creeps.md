@@ -103,7 +103,7 @@
 - Connect screen_exited() signal from VisibleOnScreenNotifier2D to Mob to add code func \_on_bisible_on_screen_notifier_2d_screen_exited()
   - queue_free() functio is called so that it deletes the node at the end of the frame when they leave the screen
 
-#### Coding Main Game Scene
+#### Adding Main Game Scene
 
 - Created a new scene called "main", using the node Node
   - Not Node2D because it doesn't have to have 2D functionality itself, it is a container for game logic
@@ -121,6 +121,8 @@
 - Add child node to 2DPath called MobSpawnLocation of node type PathFollow2D
   - Node will automatically rotate and follow the path
   - We can use it to select a random position and direction along the path
+
+#### Coding Main Game Scene
 
 ##### Understanding the Code so far
 
