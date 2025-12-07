@@ -5,7 +5,7 @@ var score
 
 
 func _ready() -> void:
-	pass
+	new_game()
 
 
 func _process(delta: float) -> void:
