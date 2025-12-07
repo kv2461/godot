@@ -118,6 +118,9 @@
   - Use "Add Path" of 2D path and click in clockwise formation so mobs spawn inward and not outward
   - Tutorial suggested using smart snap and snap grid but only used smart snap
   - Clicked on close curve to exit adding points to curve
+- Add child node to 2DPath called MobSpawnLocation of node type PathFollow2D
+  - Node will automatically rotate and follow the path
+  - We can use it to select a random position and direction along the path
 
 ##### Understanding the Code so far
 

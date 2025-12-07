@@ -26,3 +26,7 @@ position = Vector2(240, 450)
 
 [node name="MobPath" type="Path2D" parent="."]
 curve = SubResource("Curve2D_ig7tw")
+
+[node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath"]
+position = Vector2(486, 13)
+rotation = 1.5735857
