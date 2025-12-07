@@ -124,7 +124,9 @@
 
 #### Coding Main Game Scene
 
-
+- @export var mob_scene: PackedScene
+  - Mob Scene appeared in inspector for main node and added mob.tscn as Mob Scene
+  - Allows us to choose the mob scene we want to instance
 
 ##### Understanding the Code so far
 
