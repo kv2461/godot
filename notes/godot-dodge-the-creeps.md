@@ -114,6 +114,10 @@
   - Set oneshot property on (so that it happens only once)
 - Added child node StarterPosition of node Marker2D to indicate player's start position
 - Added child node MobPath of node 2DPath for mob spawn location
+  - We want them to appear in a random location at the edge of the screen
+  - Use "Add Path" of 2D path and click in clockwise formation so mobs spawn inward and not outward
+  - Tutorial suggested using smart snap and snap grid but only used smart snap
+  - Clicked on close curve to exit adding points to curve
 
 ##### Understanding the Code so far
 

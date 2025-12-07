@@ -3,6 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://bpnuk7bnhf04s" path="res://player.tscn" id="1_ig7tw"]
 
 [sub_resource type="Curve2D" id="Curve2D_ig7tw"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 486, 13, 0, 0, 0, 0, 484, 730, 0, 0, 0, 0, 9, 725, 0, 0, 0, 0, 486, 13)
+}
+point_count = 4
 
 [node name="Main" type="Node"]
 
