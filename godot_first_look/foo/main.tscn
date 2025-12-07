@@ -7,6 +7,7 @@
 [node name="Player" parent="." instance=ExtResource("1_ig7tw")]
 
 [node name="MobTimer" type="Timer" parent="."]
+wait_time = 0.5
 
 [node name="ScoreTimer" type="Node" parent="."]
 
