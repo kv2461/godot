@@ -111,6 +111,7 @@
 - Added child node MobTimer to control how often mobs spawn
 - Added child node ScoreTimer to add score based on time passed
 - Added child node StartTimer to give delay before starting the game
+- Added child node StarterPosition of node Marker2D to indicate player's start position
 
 ##### Understanding the Code so far
 
