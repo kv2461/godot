@@ -28,3 +28,7 @@ func _on_mob_timer_timeout() -> void:
 
 func _on_score_timer_timeout() -> void:
 	pass # Replace with function body.
+
+
+func _on_start_timer_timeout() -> void:
+	pass # Replace with function body.
