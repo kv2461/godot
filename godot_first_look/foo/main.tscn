@@ -36,3 +36,4 @@ position = Vector2(486, 13)
 rotation = 1.5735857
 
 [connection signal="hit" from="Player" to="." method="game_over"]
+[connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
