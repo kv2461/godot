@@ -124,6 +124,8 @@
 
 #### Coding Main Game Scene
 
+
+
 ##### Understanding the Code so far
 
 - So far I like the built in IDE for Godot - its helpful with the docs built in and having the inputs be recognized as things i can use
