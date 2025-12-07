@@ -34,3 +34,5 @@ curve = SubResource("Curve2D_ig7tw")
 [node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath"]
 position = Vector2(486, 13)
 rotation = 1.5735857
+
+[connection signal="hit" from="Player" to="." method="game_over"]

@@ -127,6 +127,7 @@
 - @export var mob_scene: PackedScene
   - Mob Scene appeared in inspector for main node and added mob.tscn as Mob Scene
   - Allows us to choose the mob scene we want to instance
+- Connected Player scene's signal hit to main with function game_over
 
 ##### Understanding the Code so far
 

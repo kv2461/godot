@@ -10,3 +10,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	pass
+
+
+func game_over() -> void:
+	pass # Replace with function body.
