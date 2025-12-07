@@ -113,6 +113,7 @@
 - Added child node StartTimer to give delay before starting the game
   - Set oneshot property on (so that it happens only once)
 - Added child node StarterPosition of node Marker2D to indicate player's start position
+- Added child node MobPath of node 2DPath for mob spawn location
 
 ##### Understanding the Code so far
 
