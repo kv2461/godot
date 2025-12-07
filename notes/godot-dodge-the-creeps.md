@@ -107,6 +107,7 @@
 
 - Created a new scene called "main", using the node Node
   - Not Node2D because it doesn't have to have 2D functionality itself, it is a container for game logic
+- Instantiated child scene "player" inside "main"
 
 ##### Understanding the Code so far
 
