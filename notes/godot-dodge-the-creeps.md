@@ -103,6 +103,11 @@
 - Connect screen_exited() signal from VisibleOnScreenNotifier2D to Mob to add code func \_on_bisible_on_screen_notifier_2d_screen_exited()
   - queue_free() functio is called so that it deletes the node at the end of the frame when they leave the screen
 
+#### Coding Main Game Scene
+
+- Created a new scene called "main", using the node Node
+  - Not Node2D because it doesn't have to have 2D functionality itself, it is a container for game logic
+
 ##### Understanding the Code so far
 
 - So far I like the built in IDE for Godot - its helpful with the docs built in and having the inputs be recognized as things i can use
