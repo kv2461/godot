@@ -110,7 +110,7 @@
 - Instantiated child scene "player" inside "main"
 - Added child node MobTimer to control how often mobs spawn
 - Added child node ScoreTimer to add score based on time passed
-
+- Added child node StartTimer to give delay before starting the game
 
 ##### Understanding the Code so far
 
