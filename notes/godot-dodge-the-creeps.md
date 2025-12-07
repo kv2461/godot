@@ -109,6 +109,8 @@
   - Not Node2D because it doesn't have to have 2D functionality itself, it is a container for game logic
 - Instantiated child scene "player" inside "main"
 - Added child node MobTimer to control how often mobs spawn
+- Added child node ScoreTimer to add score based on time passed
+
 
 ##### Understanding the Code so far
 
