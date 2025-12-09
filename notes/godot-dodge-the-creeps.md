@@ -133,11 +133,18 @@
 
 - UI for Score, "game over" message, and a restart button
   - Score changed by ScoreTimer
-  - A message, such as "Game Over" or "Get Ready" 
+  - A message, such as "Game Over" or "Get Ready"
   - A "Start" button to begin the game
 - New scene using CanvasLayer node named HUD
   - CanvasLayer node lets us draw our UI elements on a layer above the rest of the game
     - so that the information it displays isn't covered up by any game elements like the player or mobs
+- Basic node for UI elements is Control
+  - To create our UI, we'll use two types of Control nodes: Label and Button
+    - ScoreLabel = Label node
+    - Message = Label node
+    - StartButton = Button node
+    - MessageTimer = Timer node
+
 
 ##### Understanding the Code so far
 
