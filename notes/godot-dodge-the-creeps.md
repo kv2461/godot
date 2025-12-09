@@ -129,6 +129,16 @@
   - Allows us to choose the mob scene we want to instance
 - Connected Player scene's signal hit to main with function game_over
 
+#### Heads Up Display
+
+- UI for Score, "game over" message, and a restart button
+  - Score changed by ScoreTimer
+  - A message, such as "Game Over" or "Get Ready" 
+  - A "Start" button to begin the game
+- New scene using CanvasLayer node named HUD
+  - CanvasLayer node lets us draw our UI elements on a layer above the rest of the game
+    - so that the information it displays isn't covered up by any game elements like the player or mobs
+
 ##### Understanding the Code so far
 
 - So far I like the built in IDE for Godot - its helpful with the docs built in and having the inputs be recognized as things i can use
