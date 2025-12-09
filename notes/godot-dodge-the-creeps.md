@@ -144,7 +144,9 @@
     - Message = Label node
     - StartButton = Button node
     - MessageTimer = Timer node
-
+- Default font for Control nodes is small and doesn't scale well.
+  - Used a font file included in tutorial game assets called "Xolonium-Regular.ttf"
+  - Score Label Inspector > Theme Overrides > Fonts, choose Load and select the ttf file
 
 ##### Understanding the Code so far
 
