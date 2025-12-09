@@ -15,6 +15,7 @@ func _process(delta: float) -> void:
 func game_over() -> void:
 	$ScoreTimer.stop()
 	$Mobtimer.stop()
+	$HUD.show_game_over()
 
 func new_game():
 	score = 0
