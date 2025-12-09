@@ -147,6 +147,8 @@
 - Default font for Control nodes is small and doesn't scale well.
   - Used a font file included in tutorial game assets called "Xolonium-Regular.ttf"
   - Score Label Inspector > Theme Overrides > Fonts, choose Load and select the ttf file
+- Control nodes have a position and size, but they also have anchors.
+  - Anchors define the origin- the reference point for the edges of the node
 
 ##### Understanding the Code so far
 
