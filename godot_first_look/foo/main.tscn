@@ -5,11 +5,11 @@
 [ext_resource type="PackedScene" uid="uid://dek0svra1g16i" path="res://mob.tscn" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://ba81y00ndwhua" path="res://hud.tscn" id="4_1bvp3"]
 
-[sub_resource type="Curve2D" id="Curve2D_ig7tw"]
+[sub_resource type="Curve2D" id="Curve2D_1bvp3"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 486, 13, 0, 0, 0, 0, 484, 730, 0, 0, 0, 0, 9, 725, 0, 0, 0, 0, 486, 13)
+"points": PackedVector2Array(0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 482, 3, 0, 0, 0, 0, 482, 719, 0, 0, 0, 0, 5, 715, 0, 0, 0, 0, 3, 0)
 }
-point_count = 4
+point_count = 5
 
 [node name="Main" type="Node"]
 script = ExtResource("1_0xm2m")
@@ -30,11 +30,11 @@ one_shot = true
 position = Vector2(240, 450)
 
 [node name="MobPath" type="Path2D" parent="."]
-curve = SubResource("Curve2D_ig7tw")
+curve = SubResource("Curve2D_1bvp3")
 
 [node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath"]
-position = Vector2(486, 13)
-rotation = 1.5735857
+position = Vector2(3, 0)
+rotation = 0.006262966
 
 [node name="HUD" parent="." instance=ExtResource("4_1bvp3")]
 
