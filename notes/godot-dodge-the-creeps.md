@@ -179,3 +179,7 @@
     - Area2D: "Tell me when something touches me" (sensor)
     - RigidBody2D: "Physically react when something hits me" (physics object)
 - I've grouped parent nodes and its children node everytime so far (just twice but still)
+- - `In the Node tab, connect the HUD's start_game signal to the new_game() function of the Main node by clicking the "Pick" button in the "Connect a Signal" window and selecting the new_game() method or type "new_game" below "Receiver Method" in the window. Verify that the green connection icon now appears next to func new_game() in the script.`
+  - not a fan of this - its hard to see that new_game func that I made before in main's script,
+  - is somehow connected to the HUD's start_game signal
+  - I can only really tell that they're connected in the Node Inspector, not in the script itself
