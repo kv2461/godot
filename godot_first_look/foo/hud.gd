@@ -24,3 +24,6 @@ func show_game_over():
 	$Message.show()
 	await get_tree().create_timer(1.0).timeout
 	$StartButton.show()
+	
+func update_score(score):
+	$ScoreLabel.text = str(score)
