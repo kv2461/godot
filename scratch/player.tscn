@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://by4ulrvjlsrtt"]
+[gd_scene load_steps=20 format=3 uid="uid://by4ulrvjlsrtt"]
 
 [ext_resource type="Texture2D" uid="uid://wvtxqvaf8auc" path="res://Assets/Actor/Characters/Boy/SeparateAnim/Walk.png" id="1_4flbx"]
 
@@ -137,6 +137,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4flbx"]
+size = Vector2(12, 14)
+
 [node name="Player" type="Area2D"]
 metadata/_edit_group_ = true
 
@@ -144,3 +147,7 @@ metadata/_edit_group_ = true
 sprite_frames = SubResource("SpriteFrames_q13i1")
 animation = &"walk_down"
 frame_progress = 0.7680623
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_4flbx")
